@@ -26,7 +26,7 @@ export const Footer = () => {
           <p>C/ Manzana, 27</p>
           <p>Cádiz</p>
           <p>España</p>
-          <p>Tfno: +34 618 78 32 23</p>
+          <p>Tfno: +34 699 78 32 23</p>
         </div>
       </div>
 
