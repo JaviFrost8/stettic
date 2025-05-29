@@ -147,17 +147,24 @@ nav ul li a:hover{
   object-fit: cover;
 }
 
+
 .product-featured{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .product-featured span{
   font-size: 24px;
   color: var(--thirst-color);
-  font-family: 'Darker Grotesque'
+  font-family: 'Darker Grotesque';
+  transition: all 200ms ease;
+}
+
+.product-featured:hover span{
+  color: var(--fifth-color)
 }
 
 .subscribe{
