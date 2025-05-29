@@ -7,6 +7,11 @@ export const Footer = () => {
       <div className='footer-container'>
         <div>
           <img src='../public/logo.webp' alt='Logo' />
+          <div className='icons'>
+            <a href='#'><i class="fa-brands fa-twitter"></i></a>
+            <a href='#'><i class="fa-brands fa-facebook"></i></a>
+            <a href='#'><i class="fa-brands fa-instagram"></i></a>
+          </div>
         </div>
 
         <div className='info'>

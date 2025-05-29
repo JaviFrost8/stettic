@@ -1,6 +1,7 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 export const Header = () => {
+
 
   return (
     <header>
@@ -8,7 +9,7 @@ export const Header = () => {
       <ul className='login'>
         <li><a href='#'>LOGIN</a></li>
         <li><a href='#'>CREAR CUENTA</a></li>
-        <li><a href='#'>CARRITO</a></li>
+        <li><NavLink to='/carrito'>CARRITO</NavLink></li>
       </ul>
       <div className='title-container'>
         <span>ESTETTIC & TATTOO</span>

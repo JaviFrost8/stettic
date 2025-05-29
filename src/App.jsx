@@ -7,6 +7,7 @@ import { Contacto } from './pages/Contacto';
 import { Header } from './components/Header';
 import { Productos } from './pages/Productos';
 import { Footer } from './components/Footer';
+import { Carrito } from './pages/Carrito';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route path='/productos' element={<Productos />} />
           <Route path='/blog' element={<Blog />} />
           <Route path='/contacto' element={<Contacto />} />
+          <Route path='/carrito' element={<Carrito />} />
         </Routes>
         <Footer />
       </BrowserRouter>

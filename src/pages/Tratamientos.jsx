@@ -1,92 +1,51 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { tratamientos } from '../data/tratamientos'
+import { CardService } from '../components/CardService'
 
 export const Tratamientos = () => {
 
-  const navigate = useNavigate();
-
-  function navi(){
-    navigate('/contacto')
-  }
-
   return (
     <div className='big-container'>
-      <div className='container'>
-        <h2>Descubre los tratamientos que transformarán tu belleza</h2>
-        <div className='subtitle'>
-          <p>En Estettic&Tatto, nos especializamos en potenciar tu belleza natural con los tratamientos más avanzados en estética facial y corporal.</p> 
-          <p>Cada servicio está diseñado para brindarte resultados visibles, personalizados y libres de estrés, en un ambiente exclusivo y relajante.</p>
-        </div>
+      <section className='container'>
+        <span className='nuestros'>Nuestros</span>
+        <span className='tratamientos'>tratamientos</span>
+        <p className='parrafo'>
+          Nuestros <strong>tratamientos estéticos</strong> aportan un beneficio <br></br>
+          tanto para la mente como para el cuerpo y los puedes
+          combinar a tu medida.
+        </p>
+      </section>
 
-        <div className='tratamientos'>
-          <div className='tratamiento'>
-            <h3>Eliminación de líneas de expresión</h3>
-            <img src='../public/images/services/eliminación_lineas_expresión.webp' alt='Eliminación de lineas de expresión' />
-          </div>
+      <section className='questions'>
+        <h2>¿En que consisten nuestros tratamientos estéticos?</h2>
+        <p>
+          Los tratamientos estéticos que ofrecemos en <strong>Estettic&Tattoo</strong> son todos tratamientos de estética y medicina estética orientados a cuidar tu cuerpo sin cirugía. <br></br>
+          Generalmente optan por esta opción quienes quiere mejorar su silueta o tratar problemas frecuentes <br></br>
+          de nuestra piel y de nuestro cuerpo en general. <br></br>
+          Siempre para quienes no quieren someterse a tratamientos de cirugía estética o más invasivos. <br></br>
+        </p>
 
-          <div className='tratamiento'>
-            <h3>Eliminación de patas de gallo</h3>
-            <img src='../public/images/services/eliminar-patas-de-gallo.webp' alt='Eliminación patas de gallo' />
-          </div>
+        <h2>Tipos de tratamientos</h2>
+        <p>
+          En nuestro centro, ofrecemos una amplia gama de tratamientos estéticos y dermatológicos, <br></br>
+          diseñados para mejorar la salud y apariencia de la piel, tanto del rostro como del cuerpo. <br></br>
+          Nuestros procedimientos utilizan tecnología avanzada y técnicas mínimamente invasivas, <br></br>
+          garantizando resultados efectivos y personalizados. <br></br>
+        </p>
 
-          <div className='tratamiento'>
-            <h3>Eliminación de verrugas</h3>
-            <img src='../public/images/services/eliminar-verrugas.webp' alt='Eliminación de verrugas' />
-          </div>
+        <h2>Tratamientos</h2>
+      </section>
 
-          <div className='tratamiento'>
-            <h3>Hidronutrición</h3>
-            <img src='../public/images/services/hidronutricion.webp' alt='Hidronutrición' />
-          </div>
-
-          <div className='tratamiento'>
-            <h3>Eliminación de vello</h3>
-            <img src='../public/images/services/laser_triple_honda.webp' alt='Eliminación de vello' />
-          </div>
-
-          <div className='tratamiento'>
-            <h3>Levantamiento de párpados</h3>
-            <img src='../public/images/services/levantamiento_parpados.webp' alt='Levantamiento de párpados' />
-          </div>
-
-          <div className='tratamiento'>
-            <h3>Eliminación de marcas de acné</h3>
-            <img src='../public/images/services/marcas-de-acne.webp' alt='Eliminación de cicatrices y marcas de acné' />
-          </div>
-
-          <div className='tratamiento'>
-            <h3>Reducción de papada</h3>
-            <img src='../public/images/services/reduccion_de_papada.webp' alt='Reducción de papada' />
-          </div>
-
-          <div className='tratamiento'>
-            <h3>Reducción de estrías</h3>
-            <img src='../public/images/services/reduccion_estrias.webp' alt='Reducción de estrías' />
-          </div>
-
-          <div className='tratamiento'>
-            <h3>Reducción de ojeras</h3>
-            <img src='../public/images/services/reduccion_ojeras.webp' alt='Reducción de ojeras' />
-          </div>
-
-          <div className='tratamiento'>
-            <h3>Babylips</h3>
-            <img src='../public/images/services/babylips.webp' alt='Babylips' />
-          </div>
-
-          <div className='tratamiento'>
-            <h3>Eliminación de tatuajes</h3>
-            <img src='../public/images/services/eliminacion-tatuajes.webp' alt='Eliminación de tatuajes' />
-          </div>
-        </div>
-
-        <div className='more-info'>
-          <h3>Resultados con Rigor Científico</h3>
-          <h4>"Tecnología avanzada, resultados medibles."</h4>
-          <p>Nuestros tratamientos no son solo sobre estética, sino sobre salud cutánea a largo plazo. Confía en profesionales certificados para un plan personalizado.</p>
-          <p>Solicita tu diagnóstico personalizado sin costo alguno aquí: <button onClick={navi} className='btn'>Solicitar</button></p>
-        </div>
-      </div>
+      <section className='container-tratamientos'>
+          {
+            tratamientos.map(item => (
+              <CardService 
+                key={item.id}
+                item={item}
+              />
+            ))
+          }
+      </section>
     </div>
   )
 }
