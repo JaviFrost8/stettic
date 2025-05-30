@@ -545,7 +545,7 @@ input::-webkit-input-placeholder{
 .btn-description{
   margin-top: 30px;
   padding: 7px 15px;
-  background-color: var(--fifth-color);
+  background-color: var(--fourth-color);
   color: white;
   cursor: pointer;
   border: none; 
@@ -555,7 +555,7 @@ input::-webkit-input-placeholder{
 }
 
 .btn-description:hover{
-  background-color: var(--fourth-color)
+  background-color: var(--fifth-color)
 }
 
 /* Aquí empiezan la sección PRODUCTOS */
@@ -717,4 +717,184 @@ input::-webkit-input-placeholder{
 
 .stars img{
   width: 25px;
+}
+
+/* Aquí empieza la sección del BLOG*/
+
+.blog-container{
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  margin: 50px 0;
+}
+
+.title-blog{
+  display: block;
+  font-family: 'Darker Grotesque';
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  padding: 15px 0;
+  text-align: center;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 3px #ccc;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.article{
+  display: flex;
+  padding: 20px;
+  width: 95%;
+  box-shadow: 1px 1px 3px #ccc;
+  height: 230px;
+}
+
+.article img{
+  width: 300px;
+  object-fit: cover;
+}
+
+.article-photo{
+  width: 35%;
+  overflow: hidden;
+}
+
+.article-info{
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  padding: 20px;
+}
+
+.article-info p{
+  line-height: 30px;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.article-info a{
+  text-decoration: none;
+  color: var(--fifth-color);
+}
+
+.article:last-child{
+  margin-bottom: 20px;
+}
+
+/*Aquí empieza la sección CONTACTO*/
+
+.container-contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+}
+
+.form input[type='text'],
+.form input[type='email'],
+.form textarea {
+  margin: 20px 0;
+  padding: 12px;
+  border: 2px solid var(--fifth-color);
+  color: var(--fifth-color);
+  font-size: 22px;
+  width: 90%;
+}
+
+.form input[type='text']:focus,
+.form input[type='email']:focus,
+.form textarea:focus{
+  outline: none;
+  background-color: var(--fifth-color);
+  color: white;
+}
+
+.form input[type='text']::placeholder,
+.form input[type='email']::placeholder,
+.form textarea::placeholder {
+  font-style: normal;
+  color: var(--fifth-color);
+}
+
+.form input[type='text']:focus::placeholder,
+.form input[type='email']:focus::placeholder,
+.form textarea:focus::placeholder{
+  color: white;
+}
+
+input[type='submit']{
+  background-color: var(--fourth-color);
+  padding: 7px 15px;
+  border: none;
+  font-size: 23px;
+  cursor: pointer;
+  color: white;
+  margin-top: 10px;
+  transition: all 200ms ease;
+}
+
+input[type='submit']:hover{
+  padding: 7px 20px;
+  background-color: var(--fifth-color);
+}
+
+.info-contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 20%;
+}
+
+.info-contact i{
+  font-size: 50px;
+  color: var(--fifth-color)
+}
+
+.info-contact .contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.info-contact .contact span{
+  font-size: 25px;
+}
+
+.schedule{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.schedule span{
+  font-size: 25px;
+}
+
+.location{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.location span{
+  font-size: 25px;
 }

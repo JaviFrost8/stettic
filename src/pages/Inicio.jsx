@@ -52,6 +52,7 @@ export const Inicio = () => {
           <input 
             type='email' 
             placeholder='Email@ejemplo.com'
+            className='inputHome'
             required
           />
           <button type='submit'>Subscribir</button>

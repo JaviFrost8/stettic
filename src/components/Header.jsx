@@ -9,7 +9,7 @@ export const Header = () => {
       <ul className='login'>
         <li><a href='#'>LOGIN</a></li>
         <li><a href='#'>CREAR CUENTA</a></li>
-        <li><NavLink to='/carrito'>CARRITO <i class="fa-solid fa-cart-shopping"></i></NavLink></li>
+        <li><NavLink to='/carrito'>CARRITO <i className="fa-solid fa-cart-shopping"></i></NavLink></li>
       </ul>
       <div className='title-container'>
         <span>ESTETTIC & TATTOO</span>

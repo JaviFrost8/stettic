@@ -18,12 +18,12 @@ export const ProductDetail = () => {
           <p className='title'>{product.name}</p>
           <div className='stars'>
             {Array.from({length: product.stars}, (_, i) => (
-              <img src={estrella} alt='Estrella' />
+              <img key={i} src={estrella} alt='Estrella' />
             ))}
           </div>
           <p className='description'>{product.description}</p>
           <span className='price'>{product.price}€</span>
-          <button className='info-btn'><i class="fa-solid fa-cart-shopping"></i> Añadir al carrito</button>
+          <button className='info-btn'><i className="fa-solid fa-cart-shopping"></i> Añadir al carrito</button>
         </div>
       </div>
     </div>

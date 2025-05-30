@@ -11,7 +11,7 @@ export const CardService = ({ item }) => {
       </div>
       <div className='card-description'>
         <span className='description'>{item.description}</span>
-        <Link to='/contacto'><button className='btn-description'>Reservar cita</button></Link> 
+        <Link to='/contacto' onClick={() => window.scrollY(0, 0)}><button className='btn-description'>Reservar cita</button></Link> 
       </div>
     </div>
   )
