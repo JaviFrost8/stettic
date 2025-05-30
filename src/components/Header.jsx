@@ -9,7 +9,7 @@ export const Header = () => {
       <ul className='login'>
         <li><a href='#'>LOGIN</a></li>
         <li><a href='#'>CREAR CUENTA</a></li>
-        <li><NavLink to='/carrito'>CARRITO</NavLink></li>
+        <li><NavLink to='/carrito'>CARRITO <i class="fa-solid fa-cart-shopping"></i></NavLink></li>
       </ul>
       <div className='title-container'>
         <span>ESTETTIC & TATTOO</span>
@@ -26,7 +26,8 @@ export const Header = () => {
           </li>
           <li>
             <NavLink to='/productos'
-              className={({isActive}) => isActive ? 'active' : ''}>PRODUCTOS</NavLink>
+              className={({isActive}) => isActive ? 'active' : ''}>PRODUCTOS
+            </NavLink>
           </li>
           <li>
             <NavLink to='/blog'

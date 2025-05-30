@@ -558,3 +558,163 @@ input::-webkit-input-placeholder{
   background-color: var(--fourth-color)
 }
 
+/* Aquí empiezan la sección PRODUCTOS */
+
+.shop{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px 0;
+}
+
+.product-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  gap: 55px;
+  margin: 0px auto;
+  margin-top: 40px;
+}
+
+.card-product{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 450px;
+  overflow: hidden;
+}
+
+.container-photo{
+  height: 60%;
+}
+
+.card-product img{
+  width: 260px;
+  max-height: 260px;
+  overflow: hidden;
+  transition: all 200ms ease-in;
+}
+
+.card-product img:hover{
+  transform: scale(1.1);
+}
+
+.info-product{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 40%;
+}
+
+.info-product p{
+  font-size: 22px;
+}
+
+.info-product span{
+  font-size: 40px;
+}
+
+.info-product a{
+  text-decoration: none;
+  font-size: 22px;
+  color: var(--fifth-color);
+  margin-top: 15px;
+  transition: all 200ms ease;
+}
+
+.info-product a:hover{
+  color: var(--fourth-color);
+}
+
+/*Aquí empieza la sección de DETALLES DEL PRODUCTO*/
+
+.container-details{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 900px;
+  height: 450px;
+  margin: 0px auto;
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.photo-detail{
+  width: 50%;
+}
+
+.container-details img{
+  width: 420px;
+  object-fit: cover;
+}
+
+.info-detail{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.info-detail .title{
+  font-size: 25px;
+  color: var(--fifth-color)
+}
+
+.info-detail .price{
+  font-size: 35px;
+}
+
+.info-detail .info-btn{
+  background-color: var(--fifth-color);
+  padding: 7px 15px;
+  border: none;
+  font-size: 23px;
+  cursor: pointer;
+  color: white;
+  margin-top: 10px;
+  transition: all 200ms ease;
+}
+
+.info-detail .info-btn:hover{
+  padding: 7px 20px;
+  background-color: var(--fourth-color);
+}
+
+.info-detail i{
+  padding-right: 10px;
+}
+
+.back-button{
+  background-color: #eee;
+  padding: 7px 15px;
+  border: none;
+  font-size: 23px;
+  cursor: pointer;
+  color: black;
+  margin-top: 10px;
+}
+
+.big-description{
+  display: block;
+  cursor:pointer;
+  width: 80%;
+  padding: 10px 0 15px 10px;
+  background-color: rgb(247, 245, 245);
+}
+
+.stars{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7px;
+}
+
+.stars img{
+  width: 25px;
+}
