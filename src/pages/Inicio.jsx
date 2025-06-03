@@ -2,8 +2,8 @@ import React from 'react'
 
 import sillas from '/public/chairs.webp'
 import cafe from '/public/cafe.webp'
-import face from 'public/face.webp'
-import depilacion from 'public/depilacion.webp'
+import face from '/public/face.webp'
+import depilacion from '/public/depilacion.webp'
 
 export const Inicio = () => {
 
