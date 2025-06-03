@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { productos } from '../data/productos'
-import estrella from '/public/estrella.webp'
+import estrella from '../assets/estrella.webp'
 import { useCart } from '../context/CartContext'
 
 export const ProductDetail = () => {

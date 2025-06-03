@@ -1,4 +1,9 @@
 import React from 'react'
+import crema from '../assets/images/blog/crema.webp'
+import cremas from '../assets/images/blog/cremas.webp'
+import protector from '../assets/images/blog/protector.webp'
+import pelo from '../assets/images/blog/pelo.webp'
+import reductora from '../assets/images/blog/reductora.webp'
 
 export const Blog = () => {
   return (
@@ -8,7 +13,7 @@ export const Blog = () => {
 
         <div className='article'>
           <div className='article-photo'>
-            <img src='/public/images/blog/crema.webp' alt='Crema facial' />
+            <img src={crema} alt='Crema facial' />
           </div>
           <div className='article-info'>
             <p>Cosméticos multifuncionales que simplifican y potencian tu rutina</p>
@@ -20,7 +25,7 @@ export const Blog = () => {
 
         <div className='article'>
           <div className='article-photo'>
-            <img src='/public/images/blog/cremas.webp' alt='Crema facial' />
+            <img src={cremas} alt='Crema facial' />
           </div>
           <div className='article-info'>
             <p>Cómo regenerar mi piel. Cremas regeneradoras.</p>
@@ -32,7 +37,7 @@ export const Blog = () => {
 
         <div className='article'>
           <div className='article-photo'>
-            <img src='/public/images/blog/protector.webp' alt='Crema facial' />
+            <img src={protector} alt='Crema facial' />
           </div>
           <div className='article-info'>
             <p>Protectores solares y como elegir el más adecuado para tu tipo de piel.</p>
@@ -44,7 +49,7 @@ export const Blog = () => {
 
         <div className='article'>
           <div className='article-photo'>
-            <img src='/public/images/blog/pelo.webp' alt='Crema facial' />
+            <img src={pelo} alt='Crema facial' />
           </div>
           <div className='article-info'>
             <p>Como tener un pelo suave y brillante. Rutina para lavar y cuidar tu pelo</p>
@@ -56,7 +61,7 @@ export const Blog = () => {
 
         <div className='article'>
           <div className='article-photo'>
-            <img src='/public/images/blog/reductora.webp' alt='Crema facial' />
+            <img src={reductora} alt='Crema facial' />
           </div>
           <div className='article-info'>
             <p>¿Las cremas reductoras realmente funcionan?</p>

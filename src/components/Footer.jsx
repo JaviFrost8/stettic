@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from '../assets/logo.webp'
 
 export const Footer = () => {
 
@@ -6,7 +7,7 @@ export const Footer = () => {
     <div className='big-footer-container'>
       <div className='footer-container'>
         <div>
-          <img src='../public/logo.webp' alt='Logo' />
+          <img src={logo} alt='Logo' />
           <div className='icons'>
             <a href='#'><i className="fa-brands fa-twitter"></i></a>
             <a href='#'><i className="fa-brands fa-facebook"></i></a>

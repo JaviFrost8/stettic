@@ -3,6 +3,11 @@ import chairs from '../assets/chairs.webp'
 import cafe from '../assets/cafe.webp'
 import face from '../assets/face.webp'
 import depilacion from '../assets/depilacion.webp'
+import shopping from '../assets/shopping.webp'
+import shopping1 from '../assets/shopping1.webp'
+import shopping2 from '../assets/shopping2.webp'
+import shopping3 from '../assets/shopping3.webp'
+import variety from '../assets/variety.webp'
 
 export const Inicio = () => {
 
@@ -13,25 +18,25 @@ export const Inicio = () => {
 
       <div className='featured'>
         <div className='product-featured'>
-          <img src='/public/shopping.webp' alt='Primer producto' />
+          <img src={shopping} alt='Primer producto' />
           <span>Pixi Rose</span>
         </div>
         <div className='product-featured'>
-          <img src='/public/shopping1.webp' alt='Segundo producto' />
+          <img src={shopping1} alt='Segundo producto' />
           <span>Crema de gelatina</span>
         </div>
         <div className='product-featured'>
-          <img src='/public/shopping2.webp' alt='Tercer producto' />
+          <img src={shopping2} alt='Tercer producto' />
           <span>Agua de rosas</span>
         </div>
         <div className='product-featured'>
-          <img src='/public/shopping3.webp' alt='Cuarto producto' />
+          <img src={shopping3} alt='Cuarto producto' />
           <span>Serum hidratante</span>
         </div>
       </div>
 
       <div className='subscribe'>
-        <img src='../public/variety.webp' alt='Variedad de productos' />
+        <img src={variety} alt='Variedad de productos' />
         <div className='read-more'>
           <p>CONSIGUE UNA</p>
           <p className='text-suscription'>suscripción mensual</p>
