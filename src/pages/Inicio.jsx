@@ -1,4 +1,8 @@
 import React from 'react'
+import chairs from '../assets/chairs.webp'
+import cafe from '../assets/cafe.webp'
+import face from '../assets/face.webp'
+import depilacion from '../assets/depilacion.webp'
 
 export const Inicio = () => {
 
@@ -39,10 +43,10 @@ export const Inicio = () => {
       <div className='posts-container'>
         <h3>Últimas publicaciones en Instagram</h3>
         <div className='posts'>
-          <img src='/chairs.webp' alt='Sillas' />
-          <img src='/cafe.webp' alt='Café' />
-          <img src='/face.webp' alt='Masaje facial' />
-          <img src='/depilacion.webp' alt='Depilación' />
+          <img src={chairs} alt='Sillas' />
+          <img src={cafe} alt='Café' />
+          <img src={face} alt='Masaje facial' />
+          <img src={depilacion} alt='Depilación' />
         </div>
       </div>
 
