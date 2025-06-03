@@ -10,6 +10,7 @@ import { Footer } from './components/Footer';
 import { Carrito } from './pages/Carrito';
 import { ProductDetail } from './pages/ProductDetail';
 import { CartProvider } from './context/CartContext';
+import { Checkout } from './pages/Checkout';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <Route path='/blog' element={<Blog />} />
           <Route path='/contacto' element={<Contacto />} />
           <Route path='/carrito' element={<Carrito />} />
+          <Route path='/checkout' element={<Checkout />} />
         </Routes>
         <Footer />
       </BrowserRouter>

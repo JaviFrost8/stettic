@@ -4,7 +4,6 @@ import { useCart } from '../context/CartContext';
 export const Header = () => {
 
   const { cart, totalProducts } = useCart();
-  
 
   return (
     <header>

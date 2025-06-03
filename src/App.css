@@ -877,6 +877,20 @@ input[type='submit']:hover{
   background-color: var(--fifth-color);
 }
 
+.select{
+  font-family: 'Roboto Flex';
+  margin: 20px 0;
+  padding: 12px;
+  border: 1px solid var(--fifth-color);
+  color: var(--fifth-color);
+  font-size: 22px;
+  width: 90%;
+}
+
+.select:focus{
+  outline: none
+}
+
 .info-contact{
   display: flex;
   align-items: center;
@@ -940,7 +954,6 @@ input[type='submit']:hover{
 .title-cart{
   display: flex;
   width: 100%;
-  
   margin: 20px 0px 20px 120px;
 }
 
@@ -1031,6 +1044,23 @@ input[type='submit']:hover{
   width: 330px;
 }
 
+.btn-resume{
+  width: 100%;
+  background-color: var(--fourth-color);
+  padding: 8px 12px;
+  color: white;
+  font-size: 20px;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 300ms all ease;
+}
+
+.btn-resume:hover{
+  background-color: var(--fifth-color);
+}
+
+
 .resume-container{
   display: flex;
   flex-direction: column;
@@ -1038,4 +1068,23 @@ input[type='submit']:hover{
 
 .totalPrice{
   font-size: 22px;
+}
+
+/* Aqui empieza el contenido del CHECKOUT*/
+
+.container-contact{
+  margin-top: 50px;
+}
+
+.finish-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.finish-container span{
+  font-size: 30px;
+  font-weight: bold;
 }

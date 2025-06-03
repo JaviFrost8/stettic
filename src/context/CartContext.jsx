@@ -64,10 +64,15 @@ export function CartProvider({ children }) {
     })
   }
 
+  function clearCart(){
+    setCart([])
+  }
+
   return (
     <CartContext.Provider value={{
       cart,
       totalProducts,
+      clearCart,
       addToCart,
       deleteFromCart,
       addFromCart,

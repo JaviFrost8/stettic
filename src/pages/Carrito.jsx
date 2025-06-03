@@ -1,5 +1,6 @@
 import React from 'react'
 import { useCart } from '../context/CartContext'
+import { NavLink } from 'react-router-dom'
 
 export const Carrito = () => {
 
@@ -44,6 +45,7 @@ export const Carrito = () => {
                 <span>Subtotal: {`(${totalProducts} productos)`}</span>
                 <span>Gastos de envío: <strong>{totalPrice > 50 ? 'Gratis' : '4,90€'}</strong></span> 
                 <span className='totalPrice'>Total: <strong>{priceWithSend.toFixed(2)}€</strong></span>
+                <NavLink to='/checkout'><button className='btn-resume'>Finalizar compra</button></NavLink>
               </div>
             </div>
           </>
