@@ -1,10 +1,5 @@
 import React from 'react'
 
-import sillas from '/public/chairs.webp'
-import cafe from '/public/cafe.webp'
-import face from '/public/face.webp'
-import depilacion from '/public/depilacion.webp'
-
 export const Inicio = () => {
 
   return (
@@ -14,19 +9,19 @@ export const Inicio = () => {
 
       <div className='featured'>
         <div className='product-featured'>
-          <img src='../public/shopping.webp' alt='Primer producto' />
+          <img src='/public/shopping.webp' alt='Primer producto' />
           <span>Pixi Rose</span>
         </div>
         <div className='product-featured'>
-          <img src='../public/shopping1.webp' alt='Segundo producto' />
+          <img src='/public/shopping1.webp' alt='Segundo producto' />
           <span>Crema de gelatina</span>
         </div>
         <div className='product-featured'>
-          <img src='../public/shopping2.webp' alt='Tercer producto' />
+          <img src='/public/shopping2.webp' alt='Tercer producto' />
           <span>Agua de rosas</span>
         </div>
         <div className='product-featured'>
-          <img src='../public/shopping3.webp' alt='Cuarto producto' />
+          <img src='/public/shopping3.webp' alt='Cuarto producto' />
           <span>Serum hidratante</span>
         </div>
       </div>
@@ -44,10 +39,10 @@ export const Inicio = () => {
       <div className='posts-container'>
         <h3>Últimas publicaciones en Instagram</h3>
         <div className='posts'>
-          <img src={sillas} alt='Sillas' />
-          <img src={cafe} alt='Café' />
-          <img src={face} alt='Masaje facial' />
-          <img src={depilacion} alt='Depilación' />
+          <img src='/public/chairs.webp' alt='Sillas' />
+          <img src='/public/cafe.webp' alt='Café' />
+          <img src='/public/face.webp' alt='Masaje facial' />
+          <img src='/public/depilacion.webp' alt='Depilación' />
         </div>
       </div>
 
