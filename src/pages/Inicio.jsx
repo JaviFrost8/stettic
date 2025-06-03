@@ -39,10 +39,10 @@ export const Inicio = () => {
       <div className='posts-container'>
         <h3>Últimas publicaciones en Instagram</h3>
         <div className='posts'>
-          <img src='/public/chairs.webp' alt='Sillas' />
-          <img src='/public/cafe.webp' alt='Café' />
-          <img src='/public/face.webp' alt='Masaje facial' />
-          <img src='/public/depilacion.webp' alt='Depilación' />
+          <img src='/chairs.webp' alt='Sillas' />
+          <img src='/cafe.webp' alt='Café' />
+          <img src='/face.webp' alt='Masaje facial' />
+          <img src='/depilacion.webp' alt='Depilación' />
         </div>
       </div>
 
