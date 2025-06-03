@@ -1,5 +1,10 @@
 import React from 'react'
 
+import sillas from '/public/chairs.webp'
+import cafe from '/public/cafe.webp'
+import face from 'public/face.webp'
+import depilacion from 'public/depilacion.webp'
+
 export const Inicio = () => {
 
   return (
@@ -39,10 +44,10 @@ export const Inicio = () => {
       <div className='posts-container'>
         <h3>Últimas publicaciones en Instagram</h3>
         <div className='posts'>
-          <img src='../public/chairs.webp' alt='Sillas' />
-          <img src='../public/cafe.webp' alt='Café' />
-          <img src='../public/face.webp' alt='Masaje facial' />
-          <img src='../public/depilacion.webp' alt='Depilación' />
+          <img src={sillas} alt='Sillas' />
+          <img src={cafe} alt='Café' />
+          <img src={face} alt='Masaje facial' />
+          <img src={depilacion} alt='Depilación' />
         </div>
       </div>
 
