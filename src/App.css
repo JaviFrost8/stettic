@@ -19,9 +19,21 @@ body, html{
 }
 
 header{
+  position:relative;
   background-color: var(--first-color);
   height: 250px;
   width: 100%;
+}
+
+.cartNumber{
+  position: absolute;
+  right: 305px;
+  top: 37px;
+  background-color: var(--fourth-color);
+  border-radius: 50px;
+  padding: 2px 5px 3px 5px;
+  color: white;
+  font-weight: bolder;
 }
 
 .free{
@@ -35,6 +47,7 @@ header{
 }
 
 .login{
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -42,6 +55,7 @@ header{
   width: 100%;
   line-height: 60px;
   list-style: none;
+  user-select: none;
 }
 
 .login li{
@@ -67,6 +81,17 @@ header{
   color: white;
 }
 
+.login li:last-child span{
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  background-color: var(--fourth-color);
+  height: 3px;
+  width: 5px;
+  border-radius: 50px;
+  
+}
+
 .title-container{
   display: flex;
   align-items: center;
@@ -81,6 +106,7 @@ header{
 nav{
   line-height: 170px;
   width: 100%;
+  user-select: none;
 }
 
 nav ul{
@@ -805,9 +831,10 @@ input::-webkit-input-placeholder{
 .form input[type='text'],
 .form input[type='email'],
 .form textarea {
+  font-family: 'Roboto Flex';
   margin: 20px 0;
   padding: 12px;
-  border: 2px solid var(--fifth-color);
+  border: 1px solid var(--fifth-color);
   color: var(--fifth-color);
   font-size: 22px;
   width: 90%;
@@ -897,4 +924,118 @@ input[type='submit']:hover{
 
 .location span{
   font-size: 25px;
+}
+
+/* Aquí empieza la sección del CARRITO */
+
+.big-container-cart{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+  padding-bottom: 50px;
+  width: 70%;
+}
+
+.title-cart{
+  display: flex;
+  width: 100%;
+  
+  margin: 20px 0px 20px 120px;
+}
+
+.cart-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  margin-right: 450px;
+  margin-top: 30px;
+}
+
+.empty{
+  font-size: 35px;
+  margin-top: 30px;
+}
+
+.product-cart{
+  display: flex;
+  align-items: center;
+  width: 550px;
+  padding: 15px;
+  box-shadow: 1px 1px 3px #ccc;
+  background-color: #f8f8f8;
+}
+
+.product-cart img{
+  width: 120px;
+}
+
+.info-product-cart{
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px 15px;
+}
+
+.info-product-cart span{
+  font-size: 22px;
+}
+
+.quantity{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.quantity-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  border-radius: 50px;
+  width: 100px;
+}
+
+.quantity span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.quantity button{
+  padding: 0px 5px;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.resume{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  box-shadow: 1px 1px 3px #ccc;
+  padding: 20px;
+  top: 300px;
+  right: 520px;
+  width: 330px;
+}
+
+.resume-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.totalPrice{
+  font-size: 22px;
 }

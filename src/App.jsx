@@ -9,11 +9,13 @@ import { Productos } from './pages/Productos';
 import { Footer } from './components/Footer';
 import { Carrito } from './pages/Carrito';
 import { ProductDetail } from './pages/ProductDetail';
+import { CartProvider } from './context/CartContext';
 
 function App() {
 
   return (
     <>
+    <CartProvider>
       <BrowserRouter>
         <Header />
         <Routes>
@@ -27,6 +29,7 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
+    </CartProvider>
     </>
   )
 }

@@ -2,11 +2,13 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { productos } from '../data/productos'
 import estrella from '/public/estrella.webp'
+import { useCart } from '../context/CartContext'
 
 export const ProductDetail = () => {
 
   const { id } = useParams()
   const product = productos.find(item => item.id === Number(id))
+  const { addToCart } = useCart()
 
   return (
     <div className='big-container'>
@@ -23,7 +25,7 @@ export const ProductDetail = () => {
           </div>
           <p className='description'>{product.description}</p>
           <span className='price'>{product.price}€</span>
-          <button className='info-btn'><i className="fa-solid fa-cart-shopping"></i> Añadir al carrito</button>
+          <button onClick={() => addToCart(product)} className='info-btn'><i className="fa-solid fa-cart-shopping"></i> Añadir al carrito</button>
         </div>
       </div>
     </div>

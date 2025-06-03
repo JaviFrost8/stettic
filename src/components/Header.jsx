@@ -1,7 +1,10 @@
 import { NavLink, useNavigate } from 'react-router-dom';
+import { useCart } from '../context/CartContext';
 
 export const Header = () => {
 
+  const { cart, totalProducts } = useCart();
+  
 
   return (
     <header>
@@ -9,8 +12,13 @@ export const Header = () => {
       <ul className='login'>
         <li><a href='#'>LOGIN</a></li>
         <li><a href='#'>CREAR CUENTA</a></li>
-        <li><NavLink to='/carrito'>CARRITO <i className="fa-solid fa-cart-shopping"></i></NavLink></li>
+        <li>
+          <NavLink to='/carrito'>CARRITO <i className="fa-solid fa-cart-shopping"></i></NavLink>
+        </li>
       </ul>
+
+      {cart.length > 0 ? <span className='cartNumber'>{totalProducts}</span> : ''}
+      
       <div className='title-container'>
         <span>ESTETTIC & TATTOO</span>
       </div>
